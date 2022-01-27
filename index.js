@@ -4,6 +4,6 @@ function totalTip() {
   // selecting the tip percentage
   var tipTotal = document.getElementById("tipTotal").value;
 
-  console.log(checkTotal);
-  console.log(tipTotal);
+  // console.log(checkTotal);
+  // console.log(tipTotal);
 }
