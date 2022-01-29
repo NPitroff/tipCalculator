@@ -17,10 +17,10 @@ function totalTip() {
    document.getElementById("finalTotal").innerHTML = finalTotal.toFixed(2);
 
 }
-
+console.log("Tip value is " + tipTotal);
 // loop to change the card image
 var coinImage = document.getElementById("coins");
 
 if(tipTotal <= .05){
-  coineImage.setAttribute("src", "css/coins1.jpg");
+  coinImage.setAttribute("src", "css/coins1.jpg");
 }
