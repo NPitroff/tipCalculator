@@ -1,12 +1,13 @@
-// selecting the check total
-var checkTotal = document.getElementById("checkTotal").value;
-// selecting the tip percentage
-var tipTotal = document.getElementById("tipTotal").value/100;
+
 // var holding the coin img source to be changed
 var coinImage = document.getElementById("coins");
 
-console.log("Tip value is " + tipTotal);
+// console.log("Tip value is " + tipTotal);
 function totalTip() {
+  // selecting the check total
+  var checkTotal = document.getElementById("checkTotal").value;
+  // selecting the tip percentage
+  var tipTotal = document.getElementById("tipTotal").value/100;
   //variable to save the Total
    var finalTotal = Number(checkTotal) + Number(tipTotal *checkTotal);
    // console.log("tip amount is " + finalTotal.toFixed(2));
