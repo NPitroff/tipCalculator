@@ -22,5 +22,7 @@ console.log("Tip value is " + tipTotal);
 function changeCoin(){
 if(tipTotal <= .05){
   coinImage.setAttribute("src", "css/coins1.jpg");
+} else if(tipTotal >= .051){
+  coinImage.setAttribute("src", "css/coins2.jpg");
   }
 }
