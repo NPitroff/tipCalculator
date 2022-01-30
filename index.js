@@ -5,6 +5,7 @@ var tipTotal = document.getElementById("tipTotal").value/100;
 // var holding the coin img source to be changed
 var coinImage = document.getElementById("coins");
 
+console.log("Tip value is " + tipTotal);
 function totalTip() {
   //variable to save the Total
    var finalTotal = Number(checkTotal) + Number(tipTotal *checkTotal);
@@ -17,7 +18,7 @@ function totalTip() {
    // function call to change the coin image
    changeCoin();
 }
-console.log("Tip value is " + tipTotal);
+
 
 function changeCoin(){
 if(tipTotal <= .05){
