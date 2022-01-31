@@ -22,6 +22,8 @@ function totalTip() {
 
 
 function changeCoin(){
+  // selecting the tip percentage
+  var tipTotal = document.getElementById("tipTotal").value/100;
 if(tipTotal <= .05){
   coinImage.setAttribute("src", "css/coins1.jpg");
 } else if(tipTotal >= .051){
