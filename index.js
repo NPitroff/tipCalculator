@@ -15,9 +15,9 @@ function totalTip() {
    // console.log("tip amount is " + finalTotal.toFixed(2));
 
    // js to display the tip cash Amount
-   $("#tipAmount").innerHTML = Number(tipTotal * checkTotal).toFixed(2);
+   $("#tipAmount").html(Number(tipTotal * checkTotal).toFixed(2));
    //js to display the total check with tip
-   $("#finalTotal").innerHTML = finalTotal.toFixed(2);
+   $("#finalTotal").html(finalTotal.toFixed(2));
    // function call to change the coin image
    changeCoin();
 }
@@ -25,7 +25,7 @@ function totalTip() {
 
 function changeCoin(){
   // selecting the tip percentage
-  var tipTotal = document.getElementById("tipTotal").value/100;
+  var tipTotal = $("#tipTotal").val()/100;
 if(tipTotal <= .05){
   coinImage.setAttribute("src", "css/coins1.jpg");
 } else if(tipTotal >= .051){
