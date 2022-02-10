@@ -1,8 +1,8 @@
 
 // var holding the coin img source to be changed
-var coinImage = document.getElementById("coins");
+var coinImage = $("#coins");
 
-// console.log("Tip value is " + tipTotal);
+
 function totalTip() {
   // selecting the check total
   var checkTotal = $("#checkTotal").val();
@@ -26,9 +26,14 @@ function totalTip() {
 function changeCoin(){
   // selecting the tip percentage
   var tipTotal = $("#tipTotal").val()/100;
-if(tipTotal <= .05){
-  coinImage.setAttribute("src", "css/coins1.jpg");
-} else if(tipTotal >= .051){
-  coinImage.setAttribute("src", "css/coins2.jpg");
+  // if statement to change the coin image
+if(tipTotal >= .25){
+  coinImage.attr("src", "css/coins4.jpg");
+} else if(tipTotal >= .15){
+  coinImage.attr("src", "css/coins3.jpg");
+} else if(tipTotal >= .10){
+    coinImage.attr("src", "css/coins2.jpg");
+} else if(tipTotal <= .05){
+    coinImage.attr("src", "css/coins1.jpg");
   }
 }
