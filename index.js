@@ -2,7 +2,7 @@
 // var holding the coin img source to be changed
 var coinImage = $("#coins");
 
-
+// function to add the tip amounts
 function totalTip() {
   // selecting the check total
   var checkTotal = $("#checkTotal").val();
@@ -22,7 +22,7 @@ function totalTip() {
    changeCoin();
 }
 
-
+// function to change the coin image based on tip amount
 function changeCoin(){
   // selecting the tip percentage
   var tipTotal = $("#tipTotal").val()/100;
