@@ -11,6 +11,8 @@ body{
 
 .card-title{
   font-family: 'Fredericka the Great', cursive;
+  font-size: 5rem;
+  text-align: center;
 }
 
 .card-img-top{
