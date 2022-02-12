@@ -9,6 +9,10 @@ body{
   background-color: #9AD0EC;
 }
 
+.card-title{
+  font-family: 'Fredericka the Great', cursive;
+}
+
 .card-img-top{
   width:15rem;
   height:10rem;
