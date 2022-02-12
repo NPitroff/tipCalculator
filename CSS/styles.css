@@ -1,14 +1,17 @@
-.card{
-  width:46.875rem;
-  height: 25rem;
-  margin-left: 25rem;
-
+body{
+  background-color: #1572A1;
 }
 
-
+.card{
+  width:46.875rem;
+  /* height: 25rem; */
+  margin-left: 25rem;
+  background-color: #9AD0EC;
+}
 
 .card-img-top{
   width:15rem;
   height:10rem;
   display:block;
+  border-radius: 25%;
 }
