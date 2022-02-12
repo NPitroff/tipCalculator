@@ -21,10 +21,17 @@
         </div>
         <label for="userCheck">Put the Dollar amount of the check here:</label>
         <input type="text"  id="checkTotal" placeholder="Your Check Total" value="">
-<!--  -->
-        <label for="UserTip">Put the percentage you want to tip here:</label>
-        <input type="text" id="tipTotal" placeholder="Percentage Wanted" value="">
-
+<!-- input to customize the tip amount -->
+        <!-- <label for="UserTip">Put the percentage you want to tip here:</label>
+        <input type="text" id="tipTotal" placeholder="Percentage Wanted" value=""> -->
+<!-- btn field to select a fixed tip -->
+<div class="btn-field">
+<button type="button" class="btn btn-outline-light"name="button">5%</button>
+<button type="button" class="btn btn-outline-light"name="button">10%</button>
+<button type="button" class="btn btn-outline-light"name="button">15%</button>
+<button type="button" class="btn btn-outline-light"name="button">20%</button>
+</div>
+<!-- button to total the check and tip amiunts -->
 <input class="submitButton" type="submit" onclick="totalTip()" name="addTip" value="Total Check">
 <h2>Tip Amount is:</h2>
 <p id="tipAmount"></p>
