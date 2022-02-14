@@ -11,7 +11,7 @@ function totalTip() {
   var checkTotal = $("#checkTotal").val();
   console.log(checkTotal)
   // selecting the tip percentage
-  var tipTotal = parseFloat(tipPercentage);
+  var tipTotal = parseFloat(tipPercentage)/100;
   console.log(tipTotal)
   //variable to save the Total
    var finalTotal = Number(checkTotal) + Number(tipTotal *checkTotal);
