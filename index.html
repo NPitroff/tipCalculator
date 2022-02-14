@@ -26,13 +26,13 @@
         <input type="text" id="tipTotal" placeholder="Percentage Wanted" value=""> -->
 <!-- btn field to select a fixed tip -->
 <div class="btn-field">
-<button type="button" class="btn btn-outline-light"name="button">5%</button>
+<button type="button" id="fivePercent" onclick="totalTip()"class="btn btn-outline-light"name="button">5%</button>
 <button type="button" class="btn btn-outline-light"name="button">10%</button>
 <button type="button" class="btn btn-outline-light"name="button">15%</button>
 <button type="button" class="btn btn-outline-light"name="button">20%</button>
 </div>
 <!-- button to total the check and tip amiunts -->
-<input class="submitButton" type="submit" onclick="totalTip()" name="addTip" value="Total Check">
+<!-- <input class="submitButton" type="submit" onclick="totalTip()" name="addTip" value="Total Check"> -->
 <h2>Tip Amount is:</h2>
 <p id="tipAmount"></p>
 <h2 >Total Check is:</h2>
