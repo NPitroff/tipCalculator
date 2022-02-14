@@ -5,7 +5,8 @@ var coinImage = $("#coins");
 // function to add the tip amounts
 function totalTip() {
   // var to hold the inner html
-  var tipPercentage = $("#fivePercent").html;
+  var tipPercentage = $("#fivePercent").html();
+  console.log("the tipPercentage is "+tipPercentage)
   // selecting the check total
   var checkTotal = $("#checkTotal").val();
   console.log(checkTotal)
