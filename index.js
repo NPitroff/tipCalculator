@@ -47,7 +47,7 @@ if(tipTotal === .20){
 
 
 
-// function totalTip() {
+// Old JS function for function totalTip() {
 //   // var to hold the inner html
 //   var tipPercentage = $("#fivePercent").html();
 //   console.log("the tipPercentage is "+tipPercentage)
