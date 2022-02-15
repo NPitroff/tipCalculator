@@ -3,15 +3,15 @@
 var coinImage = $("#coins");
 
 // function to add the tip amounts
-function totalTip() {
+$("button").click(function() {
   // var to hold the inner html
-  var tipPercentage = $("#fivePercent").html();
+  var tipPercentage = $(this).attr('id');
   console.log("the tipPercentage is "+tipPercentage)
   // selecting the check total
   var checkTotal = $("#checkTotal").val();
   console.log(checkTotal)
   // selecting the tip percentage
-  var tipTotal = parseFloat(tipPercentage)/100;
+  var tipTotal = parseFloat(tipPercentage);
   console.log(tipTotal)
   //variable to save the Total
    var finalTotal = Number(checkTotal) + Number(tipTotal *checkTotal);
@@ -23,7 +23,7 @@ function totalTip() {
    $("#finalTotal").html(finalTotal.toFixed(2));
    // function call to change the coin image
    changeCoin();
-}
+})
 
 // function to change the coin image based on tip amount
 function changeCoin(){
@@ -43,3 +43,27 @@ if(tipTotal === .25){
     coinImage.attr("src", "css/coins1.jpg");
   }
 }
+
+
+
+// function totalTip() {
+//   // var to hold the inner html
+//   var tipPercentage = $("#fivePercent").html();
+//   console.log("the tipPercentage is "+tipPercentage)
+//   // selecting the check total
+//   var checkTotal = $("#checkTotal").val();
+//   console.log(checkTotal)
+//   // selecting the tip percentage
+//   var tipTotal = parseFloat(tipPercentage)/100;
+//   console.log(tipTotal)
+//   //variable to save the Total
+//    var finalTotal = Number(checkTotal) + Number(tipTotal *checkTotal);
+//    // console.log("tip amount is " + finalTotal.toFixed(2));
+//
+//    // js to display the tip cash Amount
+//    $("#tipAmount").html(Number(tipTotal * checkTotal).toFixed(2));
+//    //js to display the total check with tip
+//    $("#finalTotal").html(finalTotal.toFixed(2));
+//    // function call to change the coin image
+//    changeCoin();
+// }
