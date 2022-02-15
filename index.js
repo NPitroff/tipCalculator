@@ -28,12 +28,13 @@ $("button").click(function() {
 // function to change the coin image based on tip amount
 function changeCoin(){
   // var to hold the inner html
-  var tipPercentage = $("#fivePercent").html();
+  var tipPercentage = $("#tipAmount").html()/100;
+  console.log("the changeCoin() tipPercentage is "+tipPercentage)
   // selecting the tip percentage
-  var tipTotal = parseFloat(tipPercentage)/100;
+  var tipTotal = parseFloat(tipPercentage);
   // console.log("changeCoin() tipTotal is "+ tipTotal)
   // if statement to change the coin image
-if(tipTotal === .25){
+if(tipTotal === .20){
   coinImage.attr("src", "css/coins4.jpg");
 } else if(tipTotal === .15){
   coinImage.attr("src", "css/coins3.jpg");
