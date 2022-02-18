@@ -3,12 +3,19 @@ body{
 }
 
 input{
+  color: #1A5F7A;
+  font-weight: bold;
   display: block;
   position: relative;
   left: 15.5rem;
   padding:12px 20px;
   margin:8px 0;
-  box-sizing: border-box;
+  border:none;
+  border-bottom: 2px solid #FFF89A;
+}
+
+input:focus{
+  background-color: #FFF89A;
 }
 
 
@@ -44,6 +51,9 @@ p{
 }
 
 .custom-field{
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: bold;
+  font-size: 24px;
   display: block;
   text-align: center;
 
