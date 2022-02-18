@@ -3,8 +3,9 @@ body{
 }
 
 input{
+  display: block;
   position: relative;
-  left: 16rem;
+  left: 15.5rem;
   padding:12px 20px;
   margin:8px 0;
   box-sizing: border-box;
@@ -42,6 +43,11 @@ p{
   border-radius: 25%;
 }
 
+.custom-field{
+  display: block;
+  text-align: center;
+
+}
 
 .btn-field{
   text-align: center;
