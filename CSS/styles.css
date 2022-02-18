@@ -2,6 +2,17 @@ body{
   background-color: #1572A1;
 }
 
+/* input{
+  border-top: 1.25rem solid transparent;
+  position: relative;
+  left: 16rem;
+} */
+
+*,*::before, *::after{
+  box-sizing: border-box;
+}
+
+
 h2{
   font-family: 'Fredericka the Great', cursive;
   text-align: center;
@@ -32,6 +43,7 @@ p{
   display:block;
   border-radius: 25%;
 }
+
 
 .btn-field{
   text-align: center;
