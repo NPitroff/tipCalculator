@@ -44,6 +44,24 @@ p{
   border-radius: 25%;
 }
 
+.custom-field{
+  font-size: 14px;
+  position: relative;
+}
+
+.custom-field input{
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 14px;
+
+}
 
 .btn-field{
   text-align: center;
