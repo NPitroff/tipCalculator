@@ -4,10 +4,11 @@ body{
 
 input{
   color: #1A5F7A;
+  background-color: #9AD0EC;
   font-weight: bold;
   display: block;
   position: relative;
-  left: 15.5rem;
+  left: 14.5rem;
   padding:12px 20px;
   margin:8px 0;
   border:none;
